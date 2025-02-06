@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script defer src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</head>
+
+
+<body class="">
+    <header class="d-flex position-fixed sticky-top w-100 " >
+        <button id="nav-toggeler" type="button" class=" burger-button my-auto d-md-none" 
+        data-bs-toggle="modal" data-bs-target="#modal-nav" aria-controls="#modal-nav">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <nav class=" d-none d-md-flex justify-content-md-end w-100">
+            <button class="btn text-center mx-1 text-primary shadow-sm">Call Waiter</button>
+            <button class="btn text-center mx-1 text-primary shadow-sm">Register visit</button>
+            <button class="btn text-center mx-1 text-primary shadow-sm cart-button">Cart</button>
+        </nav>
+        <div id="modal-nav" class="modal fade d-md-none" tabindex="-1">
+          <div class="modal-dialog modal-lg shadow">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body ">
+                  <nav class="d-flex flex-column">
+                      <button class="btn text-start">Call Waiter</button>
+                      <button class="btn text-start">Register visit</button>
+                  </nav>
+    
+             </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <section class="banner-section ">
+      <img src="/imgs/food.jpg" class="img-thumbnail shadow d-sm-none" alt="resutrant-logo">
+    </section>
+    <main class="container">
+        <section class="brand-section ">
+          <h1 class="text-center resturant-name">Resturant X</h1>
+          <h3 class="text-center resturnat-number">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="25" height="25">
+              <path d="M16 64C16 28.7 44.7 0 80 0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64L80 64l0 320 224 0 0-320z"/>
+            </svg>
+            +961 00 000 000
+          </h3>
+      <div class="category-items-container">
+        <button class="btn scroll-btn" id="scroll-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+          </svg>
+        </button>
+        <button class="btn scroll-btn" id="scroll-right">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+          </svg>
+        </button>
+        <div class="category-items d-flex align-items-center " id="category-items" style="width: 200;"> 
+          <!-- javascript will fill this -->
+        </div>
+      </div>
+  
+        </section>
+
+        <section class="">
+          <div class="accordion accordion-flush " id="categories"></div>
+            <!-- javascript will fill this -->
+
+        </section>
+    </main>
+
+    <div id="addToCartModal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content shadow-lg">
+          <div class="modal-header shadow-sm">
+            <h3 id="item-name"></h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body container w-100">
+            <div class="row justify-content-around text-center g-2">
+              <div class="col-12 col-sm-6 img-container-dialog"><div class="img" id="image-dialog"></div></div>
+              
+              <div class="col-12 col-sm-6 text-start">
+                <p class="item-price">$ <span id="item-price-dialog" ></span></p>
+                <form class="text-start">
+                  <label for="quantity" class="form-label text-start">Quantity</label>
+                  <input class="form-control" id="quantity" type="number" name="quantity" min="1" max="100" value=1>
+                </form>
+                <div class="col-12 row justif-content-end mt-2">
+                  <button id="subtract-quantity-dialog" class=" me-auto col-6 quantity-btn"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dash-square" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                  </svg></button>
+                  <button id="add-quantity-dialog" class=" ms-auto col-6 quantity-btn"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                  </svg></c>
+                </div>
+              </div>
+            </div>
+         </div>
+         <div class="modal-footer">
+          <button id="formSubmit" type="submit" class="btn">Add to cart</button>
+         </div>
+        </div>
+      </div>
+    </div>
+    
+  <div class="offcanvas offcanvas-end " id="cart">
+    <button type="button" class="btn-close m-4 ms-auto " data-bs-dismiss="offcanvas"></button>
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Your Cart</h1>
+  </div>
+  <div class="offcanvas-body" id="cart-body">
+      <!-- javascript will fill this -->
+  </div>
+  <div class="offcanvas-footer d-flex justify-content-center flex-column">
+      <button class="btn mx-auto text-center my-4 w-75" type="button" id="continue-button">Continue</button>
+  </div>
+</div>
+<div class= "fixed-btns position-fixed " >
+  <button class="rounded-circle m-auto mb-2 hide" id="back-to-top">
+    <svg style="color: var(--main-color);" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+      <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+    </svg>
+  </button>
+  <button class="cart-button rounded-circle m-auto mb-2"><svg xmlns="http://www.w3.org/2000/svg" style="color: var(--main-color);" width="40" height="40" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+  </svg></button>
+
+</div>
+<footer class="footer">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-md-6">
+              <div class="footer-brand">CompanyName</div>
+              <p class="footer-text">Creating amazing experiences and innovative solutions for our customers
+                  worldwide.</p>
+              <div class="social-links">
+                  <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+
+          <div class="col-md-6 text-md-end">
+              <ul class="footer-links">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Terms</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="copyright text-center">
+          © 2024 CompanyName. All rights reserved.
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>

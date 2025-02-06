@@ -1,0 +1,208 @@
+{
+    "results": {
+        "categories":
+            {
+                "newOffers": {
+                    "items": [
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "o1"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "o2"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "o3"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "o4"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "o5"
+                    }
+                ],
+                "name": "New Offers"
+                },
+                "chickenShawarma": {
+                    "items": [
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "cs1"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "cs2"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "cs3"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "cs4"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "cs5"
+                    }
+                ],
+                "name": "Chicken Shawrma"
+                },
+                "meatShawrma": {
+                    "items": [
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "ms1"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "ms2"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "ms3"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "ms4"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "ms5"
+                    }
+                ],
+                "name": "Meat Shawrma"
+                },
+                "plates": {
+                    "items": [
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "p1"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "p2"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "p3"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "p4"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "p5"
+                    }
+                ],
+                "name": "Plates"
+                },
+                "sandwiches": {
+                    "items": [
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "s1"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "s2"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "s3"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "s4"
+                    },
+                    {
+                        "Name": "burger",
+                        "Price": 7.55,
+                        "ingridians": "cheese, hame, ketchub",
+                        "img": "/imgs/food.jpg",
+                        "id": "s5"
+                    }
+                ],
+                "name": "Sandwiches"
+                }
+            }
+        
+    }
+}

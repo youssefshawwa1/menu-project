@@ -1,0 +1,14 @@
+{
+  "name": "menu-project",
+  "version": "1.0.0",
+  "description": "it is a resturant menu project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Youssef shawwa",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
